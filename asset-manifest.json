@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/proyecto-todos/static/css/main.f6d75fd5.css",
+    "main.js": "/proyecto-todos/static/js/main.18e1d2df.js",
+    "index.html": "/proyecto-todos/index.html",
+    "main.f6d75fd5.css.map": "/proyecto-todos/static/css/main.f6d75fd5.css.map",
+    "main.18e1d2df.js.map": "/proyecto-todos/static/js/main.18e1d2df.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f6d75fd5.css",
+    "static/js/main.18e1d2df.js"
+  ]
+}
