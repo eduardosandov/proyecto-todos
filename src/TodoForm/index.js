@@ -3,13 +3,21 @@ import { TodoContext } from "../TodoContext";
 
 
 function TodoForm () {
+    const [newTodoValue, setNewTodoValue] = React.useState('');
     const {
-        saveTodo,
+        addTodo,
+        setOpenModal,
     } = React.useContext(TodoContext);
-    const onCancel = () =>{
-
+    const onChange = (event) =>{
+       setNewTodoValue(event.target.value);
     };
-    const onSubmit = () =>{
+    const onCancel = () =>{
+        setOpenModal(false);
+    };
+    const onSubmit = (event) =>{
+        event.preventDefault();
+        addTodo(newTodoValue);
+        setOpenModal(false);
 
     };
 
@@ -19,6 +27,8 @@ function TodoForm () {
                 ...
             </label>
             <textarea 
+            value={newTodoValue}
+            onChange={onChange}
             placeholder="cortar la cebolla"
             />
             <div>
