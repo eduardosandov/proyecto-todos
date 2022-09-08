@@ -42,19 +42,7 @@ function TodoProvider(props) {
         saveTodos(newTodos);
       };
     
-      const [openModal, setOpenModal] = React.useState(false);
-
-// Y lo exportamos
-    return (
-        <TodoContext.Provider value={{
-
-          openModal,
-          setOpenModal,
-        }}>
-          {props.children}
-        </TodoContext.Provider>
-  );
-}
+  
 
     return (
 <TodoContext.Provider value={{
@@ -67,6 +55,8 @@ function TodoProvider(props) {
           searchedTodos,
           completeTodo,
           deleteTodo,
+          openModal,
+          setOpenModal,
 
 }}>
     {props.children}
